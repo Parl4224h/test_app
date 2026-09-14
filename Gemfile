@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "concurrent-ruby", "1.3.4"
+gem "concurrent-ruby", "1.3.8"
 gem "json", "~> 2.0"
 
 gem "rexml"
