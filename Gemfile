@@ -1,7 +1,9 @@
 source "https://rubygems.org"
 
-gem 'concurrent-ruby', '1.3.4'
-gem 'json', '~> 2.0'
+gem "concurrent-ruby", "1.3.4"
+gem "json", "~> 2.0"
+
+gem "rexml"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 8.1.3", ">= 8.1.3.1"
@@ -55,6 +57,10 @@ group :development, :test do
 
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
+
+  gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
+
+  gem "rspec-rails"
 end
 
 group :development do
@@ -67,3 +73,5 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+gem "rubocop"
